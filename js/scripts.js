@@ -38,6 +38,6 @@ map.setView([28.0, -82.8], 6.5);
 //  }).addTo(map);
 
 L.esri.tiledMapLayer({
-   url: 'https://tiles.arcgis.com/tiles/cDCsY3VB02CTTRKx/arcgis/rest/services/flcrops/MapServer'
+   url: 'https://tiles.arcgis.com/tiles/cDCsY3VB02CTTRKx/arcgis/rest/services/fl18cropsonly1/MapServer'
 }).addTo(map);
 
