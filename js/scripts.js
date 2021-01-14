@@ -16,7 +16,9 @@ var map = L.map('mapid', {
 
 //var map = L.map(mapDiv, mapOptions);
 
-var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2015&TRANSPARENT=true&SRS=EPSG:102004&BBOX=-3987459.135,168311.354,4472862.725,4177587.947&FORMAT=image/png&WIDTH=800&HEIGHT=400', wmsOptions).addTo(map);
+L.tileLayer.wms({
+   url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi'
+}).addTo(map);
 
 
 map.setView([28.0, -82.8], 6.5);
