@@ -18,10 +18,13 @@ var map = L.map('mapid', {
 
 //var map = L.map(mapDiv, mapOptions);
 
-L.tileLayer.wms({
-   url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi'
-}).addTo(map);
+//L.tileLayer.wms({
+//   url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi'
+//}).addTo(map);
 
+var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
+    layers: 'cdl_2015'
+}).addTo(map);
 
 map.setView([28.0, -82.8], 6.5);
 
